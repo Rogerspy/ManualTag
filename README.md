@@ -1,2 +1,2 @@
 # ManualTag
-Manual text data tag.
+Manual text data tag tool.
