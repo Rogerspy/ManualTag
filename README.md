@@ -18,8 +18,6 @@ ManualTag就是以提高人工标记效率为目标而诞生的工具。在实�
 
 # 功能介绍
 
-<img src="https://github.com/Rogerspy/ManualTag/blob/master/img/2.PNG" width="960" hegiht="540" align=center />
-
 ManualTag目前是第一版测试版，只能进行命名实体标注（可以是字级别，也可以是词级别）。
 
 ## 项目结构
@@ -42,6 +40,8 @@ ManualTag目前是第一版测试版，只能进行命名实体标注（可以�
 - datag.py是ManualTag主程序。
 
 ## ManualTag界面介绍
+
+从左到右从上到下的顺序分别是①②③④⑤⑥：
 
     ① 用于显示需要标记的文档；
     ② 用于显示jieba分词的用户自定义词库（jieba.load_userdict词库）；
