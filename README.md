@@ -1,7 +1,7 @@
 ![](https://github.com/Rogerspy/ManualTag/blob/master/img/3.PNG)
 
 <p align="center">
-<a href="https://github.com/Rogerspy/ManualTag"><img src="https://img.shields.io/badge/release-v0.01-brightgreen.svg"></a>
+<a href="https://github.com/Rogerspy/ManualTag"><img src="https://img.shields.io/badge/release-v0.02-brightgreen.svg"></a>
 <a href="https://github.com/Rogerspy/ManualTag"><img src="https://img.shields.io/badge/Python-v3.5.2-brightgreen.svg"></a>
 <a href="https://github.com/Rogerspy/ManualTag"><img src="https://img.shields.io/badge/tkinter-v8.6-brightgreen.svg"></a>
 <a href="https://github.com/Rogerspy/ManualTag"><img src="https://img.shields.io/badge/jieba-v0.39-brightgreen.svg"></a>
