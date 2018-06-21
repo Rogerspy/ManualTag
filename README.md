@@ -126,4 +126,4 @@ DIRECTOR(e1, e2)
 # 版本变动
 
 - 2018.6.12 发布第一版
-- 2018.6.21 更新至第二版。更新内容请点[这里](https://github.com/Rogerspy/ManualTag/tree/master/change_logs)
+- 2018.6.21 更新至第二版。更新内容请点[这里](https://github.com/Rogerspy/ManualTag/blob/master/change_logs/2nd_edition.md)
