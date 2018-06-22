@@ -1,4 +1,4 @@
-![](https://github.com/Rogerspy/ManualTag/blob/master/img/3.PNG)
+![](https://github.com/Rogerspy/ManualTag/blob/master/img/p1.png)
 
 <p align="center">
 <a href="https://github.com/Rogerspy/ManualTag"><img src="https://img.shields.io/badge/release-v0.02-brightgreen.svg"></a>
