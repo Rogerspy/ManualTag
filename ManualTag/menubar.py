@@ -2,7 +2,7 @@
 """
 Created on Sun Jun 17 14:21:29 2018
 
-@author: Rogers
+@author: Rogerspy
 """
 
 import json
