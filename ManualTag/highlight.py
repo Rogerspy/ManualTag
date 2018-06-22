@@ -2,7 +2,7 @@
 """
 Created on Sun Jun 17 17:19:44 2018
 
-@author: Rogers
+@author: Rogerspy
 """
 
 class HighLight(object):
