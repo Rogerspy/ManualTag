@@ -2,7 +2,7 @@
 """
 Created on Fri Jun 15 23:23:25 2018
 
-@author: Rogers
+@author: Rogerspy
 """
 
 import jieba
