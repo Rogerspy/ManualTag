@@ -260,6 +260,33 @@ class Tag(object):
             confile.close()
             self.word = ''
     
+    def classify(self, event):
+        if len(repr(event.char)) != 2:
+            content = self.tm.items[self.mn.k].strip()+'====='+self.tags[self.word]
+            self.bf.t4.insert(INSERT, content+'\n')
+            self.bf.t4.see(END)
+            self.bf.t4.update()
+            p = str(int(self.bf.t4.index(INSERT).split('.')[0])-1)+'.0'
+            taged = open('tagdata/label_data.txt', 'a+', encoding='utf8')
+            taged.write(self.bf.t4.get(p, END)[:-1])
+            if self.mn.k+1 < len(self.tm.items):
+                self.bf.t1.delete('1.0', END)
+                self.bf.t1.insert(INSERT, ''.join(self.tm.items[:self.mn.k+1]))
+                self.bf.t1.insert(INSERT, self.tm.items[self.mn.k+1], 'color')
+                self.bf.t1.see(INSERT)
+                self.bf.t1.update()
+                self.bf.t1.insert(INSERT, ''.join(self.tm.items[self.mn.k+2:]))
+                self.bf.t2.delete('1.0', END)
+                self.bf.t2.insert(END, self.tm.items[self.mn.k+1])
+            self.mn.k += 1
+            confile = open('src/class_config.json', 'w+', encoding='utf8')
+            conjson = {'k': self.mn.k}
+            jdump = json.dumps(conjson, ensure_ascii=False)
+            confile.write(jdump)
+            confile.close()
+            taged.close()
+        self.word = ''
+    
     def choose(self, event):
         c = self.mn.ner_or_rela
         if c == 'ner':
