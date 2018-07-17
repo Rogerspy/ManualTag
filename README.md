@@ -114,6 +114,12 @@ DIRECTOR(e1, e2)
 ```
 如果一句话中没有实体关系可直接回车跳到下一句话，没有实体关系的句子不会被记录到文件中。
 
+# 分类标注
+
+```
+中国跳水队赢得北京奥运会冠军。-----> 体育
+```
+
 # 未来计划
 
 短期计划：下一步将加入实体关系标记功能，然后是事件标记。
@@ -127,3 +133,4 @@ DIRECTOR(e1, e2)
 
 - 2018.6.12 发布第一版
 - 2018.6.21 更新至第二版。更新内容请点[这里](https://github.com/Rogerspy/ManualTag/blob/master/change_logs/2nd_edition.md)
+- 2018.7.17 更新至第三版。更新内容请点击[这里](https://github.com/Rogerspy/ManualTag/blob/master/change_logs/3rd_edition.md)
