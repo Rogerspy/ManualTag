@@ -28,10 +28,10 @@ class ToolMenu(object):
         else:
             self.bf.t1.delete(1.0, END)
             f = open(self.filename1, encoding='utf8')
-            lines = f.readlines()
+            self.lines = f.readlines()
             b = 0
             self.items, pos = [], []
-            for line in lines:
+            for line in self.lines:
                 if '===========' not in line and len(line.strip()) > 0:
                     pos.append(line)
                     b += 1
