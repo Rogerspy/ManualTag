@@ -148,7 +148,29 @@ class Menubar(object):
         # build char to id dict
         self.word2id = {str(x):self.texts[x] for x in range(len(self.texts))}
     
-
+    def classify(self):
+        self.opt = 'class'
+        # get start position
+        try:
+            num = open('src/class_config.json')
+            nums = json.load(num)
+            num.close()
+            self.k = nums['k']
+        except:
+            self.k = 0
+        # update t1 texts
+        self.tm.items = self.tm.lines
+        self.bf.t1.delete(1.0, END)
+        self.bf.t1.insert(INSERT, ''.join(self.tm.items[:self.k]))
+        self.bf.t1.insert(INSERT, self.tm.items[self.k], 'color')
+        self.bf.t1.see(INSERT)
+        self.bf.t1.update()
+        if self.k+1 < len(self.tm.items):
+            self.bf.t1.insert(INSERT, ''.join(self.tm.items[self.k+1:]))
+        
+        # insert t2
+        self.bf.t2.insert(INSERT, self.tm.items[self.k])
+    
     def addmenubar(self):
         #Create Menu
         menubar = Menu(self.root)
